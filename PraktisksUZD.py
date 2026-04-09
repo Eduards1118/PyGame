@@ -12,9 +12,18 @@ GREEN = (0,255,0)
 BLACK = (0,0,0)
 
 n = 15
+
+
 for i in range(n):
-    pygame.draw.line(sc, RED,(100,100), (100+i*10, 200), 1)
-    pygame.draw.line(sc, RED,())
+    pygame.draw.line(sc, RED, (100, 200), (100 + i*10, 300), 1)
+
+
+for i in range(n):
+    pygame.draw.line(sc, RED, (240, 200), (100 + i*10, 300), 1)
+
+
+for i in range(n):
+    pygame.draw.line(sc, RED, (200, 100), (100 + i*10, 300), 1)
 
 
 
