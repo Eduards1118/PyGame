@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90ad888c-b3b5-4962-994f-207f482b2727" name="Changes" comment="Pievienojo failus">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/klaseRect.py" beforeDir="false" afterPath="$PROJECT_DIR$/klaseRect.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virsmaKustiba.py" beforeDir="false" afterPath="$PROJECT_DIR$/virsmaKustiba.py" afterDir="false" />
-    </list>
+    <list default="true" id="90ad888c-b3b5-4962-994f-207f482b2727" name="Changes" comment="izmainiju" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,6 +43,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.KustibaObjektamVirsma.executor": "Run",
     "Python.PamPrimitiviElem.executor": "Run",
     "Python.PraktisksUZD.executor": "Run",
     "Python.TastaturasNotikums.executor": "Run",
@@ -109,13 +106,30 @@
       <option name="project" value="LOCAL" />
       <updated>1776235215617</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="izmainiju">
+      <option name="closed" value="true" />
+      <created>1776323003365</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1776323003365</updated>
+    </task>
+    <task id="LOCAL-00006" summary="izmainiju">
+      <option name="closed" value="true" />
+      <created>1776323472777</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1776323472777</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="KOds" />
     <MESSAGE value="Pievienoju notikumus" />
     <MESSAGE value="Pievienojo failus" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pievienojo failus" />
+    <MESSAGE value="izmainiju" />
+    <option name="LAST_COMMIT_MESSAGE" value="izmainiju" />
   </component>
 </project>
