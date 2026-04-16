@@ -23,7 +23,7 @@ rect2 = pygame.Rect((180,40,30,30))
 print(rect1)
 rect1.move_ip(20,20)
 print(rect1)
-rect1.union()
+
 
 sc.fill(WHITE)
 sc.blit(hero,rect)
