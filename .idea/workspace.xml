@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90ad888c-b3b5-4962-994f-207f482b2727" name="Changes" comment="izmainiju" />
+    <list default="true" id="90ad888c-b3b5-4962-994f-207f482b2727" name="Changes" comment="izmainiju">
+      <change afterPath="$PROJECT_DIR$/text.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,6 +53,7 @@
     "Python.ievads.executor": "Run",
     "Python.klaseRect.executor": "Run",
     "Python.pelesNotikumi.executor": "Run",
+    "Python.text.executor": "Run",
     "Python.virsmaKustiba.executor": "Run",
     "Python.virsmas.executor": "Run",
     "Python.virsmasKustiba.executor": "Run",
@@ -130,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776323910180</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="izmainiju">
+      <option name="closed" value="true" />
+      <created>1776324442207</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1776324442207</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
