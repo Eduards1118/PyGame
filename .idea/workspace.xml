@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90ad888c-b3b5-4962-994f-207f482b2727" name="Changes" comment="izmainiju">
-      <change afterPath="$PROJECT_DIR$/Sprite.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ball.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/back1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/ball_lion.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/ball_sn_lpd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/ball_squ.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/score_fon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/telega.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprite.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sprite.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,10 +64,13 @@
     "Python.virsmasKustiba.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Programmesana/Documents/EduardsParadniks/PyGame/pyGame"
+    "last_opened_file_path": "C:/Users/Programmesana/Documents/EduardsParadniks/PyGame/pyGame/image"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Programmesana\Documents\EduardsParadniks\PyGame\pyGame\image" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Programmesana\Documents\EduardsParadniks\PyGame\pyGame\image" />
     </key>
@@ -171,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776924288557</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="izmainiju">
+      <option name="closed" value="true" />
+      <created>1776928841619</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1776928841619</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
