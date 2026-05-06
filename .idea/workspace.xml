@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90ad888c-b3b5-4962-994f-207f482b2727" name="Changes" comment="izmainiju">
-      <change afterPath="$PROJECT_DIR$/image/score_fon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/telega.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sounds.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sounds/Eduards Paradniks - bird.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sounds/Eduards Paradniks - bird.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sounds/Eduards Paradniks - bird.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sounds/Eduards Paradniks - catch.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sounds/Eduards Paradniks - catch.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sounds/Eduards Paradniks - catch.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sprite.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sprite.py" afterDir="false" />
     </list>
@@ -51,6 +56,7 @@
     "Python.KustibaObjektamVirsma.executor": "Run",
     "Python.PamPrimitiviElem.executor": "Run",
     "Python.PraktisksUZD.executor": "Run",
+    "Python.Sounds.executor": "Run",
     "Python.Sprite.executor": "Run",
     "Python.TastaturasNotikums.executor": "Run",
     "Python.ball.executor": "Run",
@@ -72,6 +78,7 @@
       <recent name="C:\Users\Programmesana\Documents\EduardsParadniks\PyGame\pyGame\image" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Programmesana\Documents\EduardsParadniks\PyGame\pyGame\sounds" />
       <recent name="C:\Users\Programmesana\Documents\EduardsParadniks\PyGame\pyGame\image" />
     </key>
   </component>
@@ -179,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776928841619</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="izmainiju">
+      <option name="closed" value="true" />
+      <created>1777963209490</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1777963209490</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

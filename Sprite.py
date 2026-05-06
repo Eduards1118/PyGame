@@ -16,17 +16,24 @@ pygame.display.set_icon(icon)
 clock = pygame.time.Clock()
 FPS = 60
 
+score = pygame.image.load("image/score_fon.png").convert_alpha()
+f = pygame.font.SysFont('arial', 30)
 
+# Tavas bildes
 balls_image = ['ball_squ.png', 'ball_sn_lpd.png', 'ball_lion.png']
 balls_surf = [pygame.image.load('image/' + path).convert_alpha() for path in balls_image]
 
 
+balls_scores = [100, 150, 200]
+
+
 class Ball(pygame.sprite.Sprite):
-    def __init__(self, x, speed, surf, group):
+    def __init__(self, x, speed, surf, score, group):
         super().__init__()
         self.image = surf
         self.rect = self.image.get_rect(center=(x, 0))
         self.speed = speed
+        self.score = score
         self.add(group)
 
     def update(self, H):
@@ -40,20 +47,26 @@ def createBall(group):
     indx = randint(0, len(balls_surf) - 1)
     x = randint(20, W - 20)
     speed = randint(1, 4)
-    return Ball(x, speed, balls_surf[indx], group)
+    return Ball(x, speed, balls_surf[indx], balls_scores[indx], group)
+
+
+game_score = 0
+
+def collideBalls():
+    global game_score
+    for ball in balls:
+        if telega_rect.collidepoint(ball.rect.center):
+            game_score += ball.score
+            ball.kill()
+
 
 balls = pygame.sprite.Group()
-
 
 back_surf = pygame.image.load("image/back1.jpg").convert()
 back_surf = pygame.transform.scale(back_surf, (W, H))
 
 telega_surf = pygame.image.load("image/telega.png").convert_alpha()
 telega_rect = telega_surf.get_rect(midbottom=(W // 2, H - 10))
-
-balls_data = ({'path':  '2.png', 'score': 100},
-              {'path':  '3.png', 'score': 150},
-              {'path':  '4.png', 'score': 200})
 
 move = 0
 player_speed = 8
@@ -87,9 +100,15 @@ while running:
     if telega_rect.right > W:
         telega_rect.right = W
 
+    collideBalls()
 
     sc.fill((0, 0, 0))
     sc.blit(back_surf, (0, 0))
+    sc.blit(score, (0, 0))
+
+    sc_text = f.render(str(game_score), 1, (94, 138, 14))
+    sc.blit(sc_text, (20, 10))
+
     balls.draw(sc)
     sc.blit(telega_surf, telega_rect)
 
