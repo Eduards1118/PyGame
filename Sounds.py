@@ -1,8 +1,12 @@
 import pygame
+from pygame.examples.music_drop_fade import volume
+pygame.mixer.pre_init(44100,-16,1,512)
 pygame.init()
 
 pygame.mixer.music.load("sounds/Eduards Paradniks - bird.mp3")
 pygame.mixer.music.play(-1)
+
+s = pygame.mixer.Sound("sounds/Eduards Paradniks - catch.ogg") #wav
 
 W = 600
 H = 400
@@ -17,13 +21,13 @@ BLACK = (0,0,0)
 
 
 
-
-
 pygame.display.update()
 clock = pygame.time.Clock()
 flPause = False
 FPS = 60
 flRunning = True
+vol = 1.0
+
 while flRunning:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -35,6 +39,17 @@ while flRunning:
                     pygame.mixer.music.pause()
                 else:
                     pygame.mixer.music.unpause()
+            elif event.key == pygame.K_LEFT:
+                vol -= 0.1
+                pygame.mixer.music.set_volume(vol)
+            elif event.key == pygame.K_RIGHT:
+                vol += 0.1
+                pygame.mixer.music.set_volume(vol)
+            elif event.key == pygame.K_RETURN:
+                s.play()
+
+            # ch = s.play()
+            # ch.pause()
 
 clock.tick(FPS)
 

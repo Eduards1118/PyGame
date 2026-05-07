@@ -1,9 +1,13 @@
 import pygame
+
+pygame.mixer.pre_init(44100, -16, 1, 512)
 from random import randint
 
 pygame.init()
 
-pygame.time.set_timer(pygame.USEREVENT, 2000)
+s = pygame.mixer.Sound("sounds/Eduards Paradniks - catch.ogg")
+
+pygame.time.set_timer(pygame.USEREVENT, 1000)
 
 W = 600
 H = 400
@@ -19,10 +23,8 @@ FPS = 60
 score = pygame.image.load("image/score_fon.png").convert_alpha()
 f = pygame.font.SysFont('arial', 30)
 
-# Tavas bildes
 balls_image = ['ball_squ.png', 'ball_sn_lpd.png', 'ball_lion.png']
 balls_surf = [pygame.image.load('image/' + path).convert_alpha() for path in balls_image]
-
 
 balls_scores = [100, 150, 200]
 
@@ -37,9 +39,12 @@ class Ball(pygame.sprite.Sprite):
         self.add(group)
 
     def update(self, H):
+        global missed
+
         if self.rect.y < H - self.rect.height:
             self.rect.y += self.speed
         else:
+            missed += 1
             self.kill()
 
 
@@ -51,6 +56,8 @@ def createBall(group):
 
 
 game_score = 0
+missed = 0
+
 
 def collideBalls():
     global game_score
@@ -58,6 +65,7 @@ def collideBalls():
         if telega_rect.collidepoint(ball.rect.center):
             game_score += ball.score
             ball.kill()
+            s.play()
 
 
 balls = pygame.sprite.Group()
@@ -74,16 +82,18 @@ player_speed = 8
 createBall(balls)
 
 running = True
+game_over = False
+
 while running:
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
 
-        elif event.type == pygame.USEREVENT:
+        elif event.type == pygame.USEREVENT and not game_over:
             createBall(balls)
 
-        elif event.type == pygame.KEYDOWN:
+        elif event.type == pygame.KEYDOWN and not game_over:
             if event.key == pygame.K_RIGHT:
                 move = player_speed
             elif event.key == pygame.K_LEFT:
@@ -93,24 +103,37 @@ while running:
             if event.key in (pygame.K_LEFT, pygame.K_RIGHT):
                 move = 0
 
-    telega_rect.x += move
+    if not game_over:
+        telega_rect.x += move
 
-    if telega_rect.left < 0:
-        telega_rect.left = 0
-    if telega_rect.right > W:
-        telega_rect.right = W
+        if telega_rect.left < 0:
+            telega_rect.left = 0
+        if telega_rect.right > W:
+            telega_rect.right = W
 
-    collideBalls()
+        collideBalls()
 
-    sc.fill((0, 0, 0))
     sc.blit(back_surf, (0, 0))
     sc.blit(score, (0, 0))
 
     sc_text = f.render(str(game_score), 1, (94, 138, 14))
     sc.blit(sc_text, (20, 10))
 
+    miss_text = f.render(f"Errors: {missed}/5", 1, (255, 0, 0))
+    sc.blit(miss_text, (20, 50))
+
     balls.draw(sc)
     sc.blit(telega_surf, telega_rect)
+
+    if missed >= 5 and not game_over:
+        game_over = True
+        running = False
+
+        game_over_text = f.render("GAME OVER", 1, (255, 0, 0))
+        sc.blit(game_over_text, (W // 2 - 120, H // 2 - 20))
+
+        pygame.display.update()
+        pygame.time.delay(2000)
 
     pygame.display.update()
     balls.update(H)

@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90ad888c-b3b5-4962-994f-207f482b2727" name="Changes" comment="izmainiju">
-      <change afterPath="$PROJECT_DIR$/Sounds.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sounds/Eduards Paradniks - bird.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sounds/Eduards Paradniks - bird.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sounds/Eduards Paradniks - bird.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sounds/Eduards Paradniks - catch.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sounds/Eduards Paradniks - catch.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sounds/Eduards Paradniks - catch.wav" afterDir="false" />
+    <list default="true" id="90ad888c-b3b5-4962-994f-207f482b2727" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sounds.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sounds.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sprite.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sprite.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,28 +45,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.KustibaObjektamVirsma.executor": "Run",
-    "Python.PamPrimitiviElem.executor": "Run",
-    "Python.PraktisksUZD.executor": "Run",
-    "Python.Sounds.executor": "Run",
-    "Python.Sprite.executor": "Run",
-    "Python.TastaturasNotikums.executor": "Run",
-    "Python.ball.executor": "Run",
-    "Python.bildes.executor": "Run",
-    "Python.ievads.executor": "Run",
-    "Python.klaseRect.executor": "Run",
-    "Python.pelesNotikumi.executor": "Run",
-    "Python.text.executor": "Run",
-    "Python.virsmaKustiba.executor": "Run",
-    "Python.virsmas.executor": "Run",
-    "Python.virsmasKustiba.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Programmesana/Documents/EduardsParadniks/PyGame/pyGame/image"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.KustibaObjektamVirsma.executor&quot;: &quot;Run&quot;,
+    &quot;Python.PamPrimitiviElem.executor&quot;: &quot;Run&quot;,
+    &quot;Python.PraktisksUZD.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Sounds.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Sprite.executor&quot;: &quot;Run&quot;,
+    &quot;Python.TastaturasNotikums.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ball.executor&quot;: &quot;Run&quot;,
+    &quot;Python.bildes.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ievads.executor&quot;: &quot;Run&quot;,
+    &quot;Python.klaseRect.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pelesNotikumi.executor&quot;: &quot;Run&quot;,
+    &quot;Python.text.executor&quot;: &quot;Run&quot;,
+    &quot;Python.virsmaKustiba.executor&quot;: &quot;Run&quot;,
+    &quot;Python.virsmas.executor&quot;: &quot;Run&quot;,
+    &quot;Python.virsmasKustiba.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Programmesana/Documents/EduardsParadniks/PyGame/pyGame/image&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Programmesana\Documents\EduardsParadniks\PyGame\pyGame\image" />
@@ -194,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777963209490</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Pievienoju Sounds.py, Sprite">
+      <option name="closed" value="true" />
+      <created>1778056099864</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1778056099864</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -202,6 +204,7 @@
     <MESSAGE value="Pievienoju notikumus" />
     <MESSAGE value="Pievienojo failus" />
     <MESSAGE value="izmainiju" />
-    <option name="LAST_COMMIT_MESSAGE" value="izmainiju" />
+    <MESSAGE value="Pievienoju Sounds.py, Sprite" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pievienoju Sounds.py, Sprite" />
   </component>
 </project>
